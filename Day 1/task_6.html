@@ -1,12 +1,45 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Task 6 , JS ITI course">
     <title>Task 6</title>
     <script>
-        
+        var arr = [1,2,3,4,5,6];
+        var sum =0;
+        document.write("<table>");
+        document.write("<thead><tr bgcolor = \"4169E1\"><th>values</th></tr></thead>");
+
+
+        document.write("<tbody>");
+
+            for(var i = 0 ; i < arr.length ;i++)
+            {
+                if(arr[i]==1)
+                document.write("<tr bgcolor = \"red\">><td>"+arr[i]+"</td></tr>");
+                else if(arr[i]==2)
+                document.write("<tr bgcolor = \"green\">><td>"+arr[i]+"</td></tr>");
+                else
+                {
+                    if(arr[i]%2==0)
+                    document.write("<tr bgcolor = \"87CEFA\">><td>"+arr[i]+"</td></tr>");
+                    else
+                    document.write("<tr bgcolor = \"6495ED\">><td>"+arr[i]+"</td></tr>");
+                }
+                sum += arr[i];
+            }
+
+        document.write("</tbody>");
+
+
+
+        document.write("<tfoot><tr bgcolor = \"6495ED\">><td>summation = "+sum+"</td></tr></tfoot>");
+        document.write("</table>");
+
     </script>
 </head>
 <body>
     
 </body>
+
+</html>
