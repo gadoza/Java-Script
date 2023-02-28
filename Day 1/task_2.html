@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Task 2 , JS ITI course"/>
+    <title>Task 2</title>
+    <script>
+        var sum = 0 ;
+        var myinput;
+        do{
+            myinput = prompt("enter a number");
+            var asNum = Number(myinput) ; // if the user enters cancel or esc it will be resolved in myinput to null and in asNum to 0 so it breaks;\
+            while(isNaN(asNum))
+            {
+                myinput = prompt("enter a VALID number");
+                asNum = Number(myinput); 
+            }
+            if(asNum == 0)
+            break;
+            sum += asNum; 
+        }while(sum<=100);
+        alert("the sum of numbers quals "+ sum);
+    </script>
+</head>

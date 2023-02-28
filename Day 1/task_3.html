@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Task 3 , JS ITI course">
+    <title>Task 3</title>
+
+    <script>
+        var inputString;
+        var inputInt;
+        var arr = []
+        var num = 3 ; 
+        while(num--)
+        {
+            inputString = prompt("enter value number "+(3-num));
+            inputInt = +inputString;
+            while(isNaN(inputInt))
+            {
+                inputString = prompt("enter a VALID number");
+                inputInt = +inputString;    
+            }
+            arr.push(inputInt);
+        }
+        document.write("<pre>");
+        document.writeln("sum of the 3 values ".fontcolor("red")+arr[0]+" + "+arr[1]+" + "+arr[2]+" = " + (arr[0]+arr[1]+arr[2]))
+        document.writeln("multiplication of the 3 values ".fontcolor("red")+arr[0]+" * "+arr[1]+" * "+arr[2]+" = " + (arr[0]*arr[1]*arr[2]))
+        document.writeln(  "division of the 3 values ".fontcolor("red")+arr[0]+" / "+arr[1]+" / "+arr[2]+" = " + (arr[0]/arr[1]/arr[2]).toFixed(2))
+        document.write("</pre>");
+    </script>
+</head>
