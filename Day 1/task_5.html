@@ -7,8 +7,8 @@
         var imageName;
         var imageColor;
         var imagetype;
-        imageName = prompt("enter image name");
-        imagetype = prompt("enter image type");
+        imageName = prompt("enter image name","new");
+        imagetype = prompt("enter image type","png");
         imageColor = prompt("enter image color");
         document.write('<pre>')
         document.writeln('<p style = "margin:auto;color:'+imageColor+'">'+'This is ur image\n'+'<img src = "'+imageName+'.'+imagetype+'" alt = "invalid" width = "200" style="border:2px solid '+imageColor+'"/>'+'</p>')
